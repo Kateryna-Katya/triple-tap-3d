@@ -150,3 +150,199 @@ height: 600px;
         height: 124px;
  }
  }
+/* Master the Triple Tap in Minutes */
+.master-title{
+   margin-bottom: 32px;
+}
+.master-list{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.master-item{
+   display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: center;
+}
+.number-container{
+   border-radius: 24px;
+       width: 48px;
+      height: 48px;
+      background: #fff;
+      color: #20335a;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@media only screen and (min-width: 1439px) {
+ .master-title{
+   margin-bottom: 40px;
+ }
+ .master-list{
+   flex-direction: row;
+ }
+ .master-item{
+   width: 306px;
+      height: 122px;
+ }
+}
+/* Perfect for Every Puzzle Lover */
+.perfect-title{
+   margin-bottom: 32px;
+}
+.perfect-text{
+   margin-top: 20px;
+}
+@media only screen and (min-width: 1439px) {
+.perfect-title{
+   margin-bottom: 40px;
+}
+.perfect-wrapper{
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+.perfect-img-container{
+   order: 2;
+}
+.perfect-text{
+   width: 628px;
+}
+}
+/* Ready to Match Like a Master? */
+.ready-title{
+   margin-bottom: 32px;
+}
+.ready-text-one{
+   margin-bottom: 32px;
+}
+.ready-text-two{
+   text-align: center;
+   font-size: 16px;
+}
+.ready-img{
+   display: none;
+}
+@media only screen and (min-width: 1439px) {
+
+.ready-container{
+   position: relative;
+}
+.ready-img{
+display: block;
+position: absolute;
+}
+.ready-img-one{
+   top: 40px;
+   right: 80px;
+}
+.ready-img-two{
+   top: 160px;
+      right:400px;
+}
+.ready-text-one{
+   margin-bottom: 130px;
+}
+.ready-img-three{
+   bottom: -60px;
+   right: 100px;
+}
+.ready-img-four{
+   top: 200px;
+   left: 0;
+}
+}
+/* Game Preview */
+.game-title{
+   margin-bottom: 32px;
+}
+.game-text{
+   margin-bottom: 30px;
+}
+.game-img{
+   width: 100%;
+}
+.game-swiper-slide{
+   cursor: pointer;
+   justify-content: center;
+}
+.custom-navigation{
+   margin-top: 26px;
+display: flex;
+justify-content: center;
+}
+.custom-arrow{
+   background-color: inherit;
+   border: none; 
+   cursor: pointer; 
+}
+@media only screen and (min-width: 1439px) {
+ .game-title{
+   margin-bottom: 40px;
+ }
+ .game-text{
+   margin-bottom: 56px;
+ }
+ .game-swiper-slide{
+   max-width: 216px;
+      height: 384px;
+ }
+ .game-swiper-wrapper{
+   display: flex;
+   gap: 49px;
+justify-content: center;
+ }
+ .custom-navigation{
+   display: none;
+ }
+}
+/* Unlock Your Inner Puzzle Pro */
+.pro-container{
+   position: relative;
+}
+.pro-title{
+   margin-bottom: 32px;
+}
+.pro-img-desk{
+   display: none;
+}
+.pro-img-mob-one{
+   position: absolute;
+   width: 82px;
+   height: 122px;
+   bottom: -30px;
+   right: 0;
+}
+.pro-img-mob-two{
+   position: absolute;
+   bottom: -20px;
+   left: 0;
+   width: 50px;
+   height: 60px;
+}
+@media only screen and (min-width: 1439px) {
+ .pro-title{
+   margin-bottom: 40px;
+ }
+ .pro-img-mob{
+   display: none;
+ }
+ .pro-img-desk{
+   display: block;
+ }
+ .pro-img-desk-one{
+   position: absolute;
+   width: 160px;
+   height: 140px;
+   top: 30px;
+   right: 500px;
+ }
+ .pro-img-desk-two{
+   position: absolute;
+   bottom: -140px;
+   right: 200px;
+   width: 200px;
+      height: 230px;
+ }
+}
