@@ -1,0 +1,100 @@
+/* Home */
+.home-section{
+    background-image: url("/img/hero/hero-mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 740px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+.hero-container{
+    position: relative;
+}
+.hero-mob-img{
+    position: absolute;
+    right: 0;
+    top: 290px;
+    z-index: 5;
+    width: 100px;
+    height: 142px;
+}
+.hero-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Fredoka", sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        color: #fff;
+        margin-top: 98px;
+        margin-bottom: 32px;
+}
+.hero-text{
+    font-size: 16px;
+    line-height: 1.5;
+    width: 343px;
+}
+.hero-desk-img{
+    display: none;
+}
+@media only screen and (min-width: 1439px) {
+ .hero-mob-img{
+    display: none;
+ }
+ .home-section{
+    background-image: url("/img/hero/hero-desk.png");
+ }
+ .hero-text-wrapper{
+    gap: 40px;
+    font-size: 96px;
+ }
+ .hero-text-two{
+    margin-left: 394px;
+ }
+ .hero-text{
+    position: absolute;
+    top: 194px;
+    right:80px;
+    font-size: 20px;
+    width: 616px;
+ }
+ .hero-desk-img{
+    display: block;
+    position: absolute;
+    left: 120px;
+    top: 340px;
+    width: 306px;
+    height: 78px;
+ }
+}
+/* What is Crazy Match ! Triple Tap 3D? */
+.crazy-title{
+    margin-bottom: 32px;
+}
+.crazy-text{
+    margin-top: 20px;
+    line-height: 1.5;
+ }
+ @media only screen and (min-width: 1439px) {
+   .crazy-title{
+    margin-bottom: 40px;
+   }
+   .crazy-wrapper{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+   }
+   .crazy-text{
+    width: 628px;
+   }
+ }
