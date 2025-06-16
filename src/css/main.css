@@ -98,3 +98,55 @@
     width: 628px;
    }
  }
+ /* Why You’ll Love Crazy Match */
+ .love-section{
+    background-image: url("/img/love/grapes-one-mob.png"), url("/img/love/grapes-two-mob.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 80px right, bottom left 20px;
+    background-size: 81px 99px, 115px 141px;
+    height: 1060px;
+ }
+ .love-title{
+    margin-bottom: 32px;
+ }
+ .love-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+ }
+ .love-item{
+    border-radius: 12px;
+        padding: 32px;
+        width: 343px;
+        height: auto;
+        background: #20335a;
+        text-align: center;
+ }
+ @media only screen and (min-width: 1439px) {
+ .love-section {
+background-image: url("/img/love/grapes-one-desk.png"),url("/img/love/grapes-right-desk.png"), url("/img/love/grapes-left-desk.png");
+background-repeat: no-repeat, no-repeat;
+background-position: top 70px right 480px, bottom right 200px, bottom 80px left 200px;
+background-size: 115px 121px,193px 200px, 115px 141px;
+height: 600px; 
+ }
+ .love-title{
+    margin-bottom: 40px;
+ }
+ .love-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .love-item{
+    padding: 32px;
+        width: 310px;
+        height: 124px;
+       align-content: center;  
+ }
+ .love-item-big{
+    padding: 32px;
+        width: 418px;
+        height: 124px;
+ }
+ }
