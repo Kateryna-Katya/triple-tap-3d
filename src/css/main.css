@@ -47,6 +47,29 @@
 .hero-desk-img{
     display: none;
 }
+.home-btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #fff;
+      border-radius: 12px;
+      padding: 24px;
+      width: 216px;
+      height: 48px;
+      box-shadow: -8px 8px 8px 0 rgba(0, 0, 0, 0.24);
+         background: #ff7b00;
+         cursor: pointer;
+         font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            color: #fff;
+            margin-top: 32px;
+   transition: all 0.3s ease;
+}
+.home-btn:hover{
+   background: #ff9028;
+   box-shadow: 0 0 4px 0 #fff, -8px 8px 8px 0 rgba(0, 0, 0, 0.24);
+}
 @media only screen and (min-width: 1439px) {
  .hero-mob-img{
     display: none;
@@ -75,6 +98,15 @@
     top: 340px;
     width: 306px;
     height: 78px;
+ }
+ .home-btn {
+   width: 306px;
+      height: 78px;
+      margin-right: 140px;
+      margin-left: auto;
+      margin-top: -120px;
+      font-weight: 400;
+         font-size: 20px;
  }
 }
 /* What is Crazy Match ! Triple Tap 3D? */
@@ -224,6 +256,35 @@ align-items: center;
 .ready-img{
    display: none;
 }
+.ready-btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #fff;
+   border-radius: 12px;
+   padding: 24px;
+   width: 216px;
+   height: 48px;
+   box-shadow: -8px 8px 8px 0 rgba(0, 0, 0, 0.24);
+   background: #ff7b00;
+   cursor: pointer;
+   font-family: "Poppins", sans-serif;
+   font-weight: 300;
+   font-size: 16px;
+   color: #fff;
+   margin-top: 32px;
+   transition: all 0.3s ease;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 20px;
+}
+.desk-btn{
+   display: none;
+}
+.ready-btn:hover {
+   background: #ff9028;
+   box-shadow: 0 0 4px 0 #fff, -8px 8px 8px 0 rgba(0, 0, 0, 0.24);
+}
 @media only screen and (min-width: 1439px) {
 
 .ready-container{
@@ -242,7 +303,7 @@ position: absolute;
       right:400px;
 }
 .ready-text-one{
-   margin-bottom: 130px;
+   margin-bottom: 56px;
 }
 .ready-img-three{
    bottom: -60px;
@@ -251,6 +312,20 @@ position: absolute;
 .ready-img-four{
    top: 200px;
    left: 0;
+}
+.ready-btn{
+   width: 305px;
+      height: 78px;
+      font-weight: 400;
+         font-size: 20px;
+         margin-bottom: 40px;
+}
+.mob-btn{
+   display: none;
+}
+.desk-btn{
+   display: block;
+
 }
 }
 /* Game Preview */
@@ -344,5 +419,138 @@ justify-content: center;
    right: 200px;
    width: 200px;
       height: 230px;
+ }
+}
+/* Never a Dull Moment */
+.never-container{
+   position: relative;
+}
+.never-title{
+   margin-bottom: 32px;
+}
+.never-img-desk{
+   display: none;
+}
+.never-img-mob{
+   position: absolute;
+   bottom: -20px;
+   right: 0;
+   width: 66px;
+      height: 79px;
+}
+@media only screen and (min-width: 1439px) {
+ .never-title{
+   margin-bottom: 40px;
+ }
+ .never-text{
+   width: 1265px;
+ }
+ .never-img-mob{
+   display: none;
+ }
+ .never-img-desk{
+   display: block;
+   position: absolute;
+   width: 102px;
+      height: 122px;
+      bottom: -30px;
+      right: 510px;
+ }
+}
+/* What Players Are Saying */
+.reviews-container{
+   position: relative;
+   height: 600px;
+}
+.reviews-title{
+   margin-bottom: 32px;
+}
+.reviews-wrapper-container{
+   position: absolute;
+   width: 99%;
+ margin-left: -14px;
+}
+.rating-five,
+.rating-four{
+   width: 178px;
+      height: 26px;
+      margin-bottom: 24px;
+}
+.reviews-swiper-slide{
+   cursor: pointer;
+   border: 2px solid #486fbe;
+      border-radius: 16px;
+      padding: 20px;
+      min-height: 180px;
+}
+.reviews-text{
+   font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: #fff;
+}
+.reviews-swiper-one{
+   margin-bottom: 20px;
+}
+@media only screen and (min-width: 1439px) {
+ .reviews-title{
+   margin-bottom: 50px;
+ }
+ .reviews-wrapper-container {
+    margin-left: -74px;
+ }
+ .reviews-swiper-slide {
+    min-height: 150px;
+ }
+}
+/* Let’s Stay Connected */
+.contact-section{
+   background-image: url("/img/contact/mob.png");
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-size: cover;
+   height: 414px;
+}
+.contact-container{
+   position: relative;
+}
+.contact-title{
+   margin-bottom: 32px;
+}
+.contact-wrapper{
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   color: #eaeaea;
+}
+.contact-link{
+   text-decoration: underline;
+      text-decoration-skip-ink: none;   
+}
+.contact-img{
+   display: none;
+}
+@media only screen and (min-width: 1439px) {
+ .contact-section{
+   background-image: url("/img/hero/hero-desk.png");
+   background-position: top -190px center;
+   height: 400px;
+ }
+ .contact-title{
+   margin-bottom: 40px;
+ }
+ .contact-wrapper{
+   width: 346px;
+      height: 222px;
+      margin-left: auto;
+      margin-right: auto;
+ }
+ .contact-img{
+   display: block;
+   position: absolute;
+   width: 278px;
+      height: 209px;
+      bottom: 36px;
+      right: 240px;
  }
 }

@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -34,7 +34,7 @@ function initSwipers() {
     if (config.selector === '.game-swiper') {
       if (screenWidth < 1439) {
         const swiper = new Swiper(container, {
-          modules: [Navigation], 
+          modules: [Navigation],
           slidesPerView: 1,
           spaceBetween: 10,
           loop: true,
@@ -49,7 +49,59 @@ function initSwipers() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', initSwipers);
+function initReviewSwipers() {
+  const reviewsOneEl = document.querySelector('.reviews-swiper-one');
+  const reviewsTwoEl = document.querySelector('.reviews-swiper-two');
+
+  if (reviewsOneEl) {
+    new Swiper(reviewsOneEl, {
+      modules: [Autoplay],
+      loop: true,
+      spaceBetween: 20,
+      speed: 6000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+          1439: {
+          slidesPerView: 2.5,
+        },
+      },
+    });
+  }
+
+  if (reviewsTwoEl) {
+    new Swiper(reviewsTwoEl, {
+      modules: [Autoplay],
+      loop: true,
+      spaceBetween: 20,
+      speed: 7000,
+      autoplay: {
+        delay: 1,
+        disableOnInteraction: false,
+        reverseDirection: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.2,
+        },
+        1439: {
+          slidesPerView: 2,
+        },
+      },
+    });
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  initSwipers();
+  initReviewSwipers();
+});
 
 window.addEventListener('resize', () => {
   clearTimeout(window._swiperResizeTimeout);
