@@ -1,0 +1,107 @@
+.cookie-popup {
+    position: fixed;
+    bottom: 30px;
+    left: 48%;
+    transform: translateX(-48%);
+    border-radius: 12px;
+        padding: 24px 16px;
+        background:#274874;
+        z-index: 1000;
+    width: 374px;
+    height: auto;
+    display: none;
+}
+
+.popup-title {
+    font-family: "Fredoka", sans-serif;
+        font-weight: 300;
+        font-size: 32px;
+        color: #fff;
+        text-align: left;
+    margin-bottom: 12px;
+}
+
+.cookie-class {
+    font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        color: #fff;
+    text-align: left;
+    width: 343px;
+}
+
+.cookie-buttons {
+    display: flex;
+     gap: 16px;
+    width: 343px;
+        height:48px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-accept {
+    border: 1px solid #fff;
+        border-radius: 12px;
+        width: 163px;
+        height: 48px;
+        box-shadow: -8px 8px 8px 0 rgba(0, 0, 0, 0.24);
+            background: #ff7b00;
+            font-family: "Poppins", sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                color: #fff;
+    box-sizing: border-box;
+
+}
+
+.btn-decline {
+    border: 1px solid #fff;
+        border-radius: 12px;
+        width: 163px;
+        height: 48px;
+        box-shadow: -8px 8px 8px 0 rgba(0, 0, 0, 0.24);
+        font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            color: #fff;
+    box-sizing: border-box;
+    background-color: inherit;
+}
+
+@media screen and (min-width: 1439px) {
+    .cookie-popup {
+        border-radius: 12px;
+            padding: 24px;
+            width: 680px;
+        height: auto;
+    }
+    .popup-title {
+        font-size: 40px;
+        margin-bottom: 24px;
+    }
+
+    .cookie-class {
+        width: 632px;
+    }
+
+    .cookie-buttons {
+        gap: 20px;
+        width: 632px;
+            height: 78px;
+       margin: 32px auto 0;
+    }
+
+    .btn-accept {
+        width: 306px;
+            height: 78px;
+            font-size: 20px;
+    }
+
+    .btn-decline {
+        width: 306px;
+            height: 78px;
+            font-size: 20px;
+    }
+}
