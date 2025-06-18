@@ -21,21 +21,62 @@
     <script type="module" crossorigin src="/triple-tap-3d/index.js"></script>
     <link rel="modulepreload" crossorigin href="/triple-tap-3d/assets/vendor-B982kwEF.js">
     <link rel="stylesheet" crossorigin href="/triple-tap-3d/assets/vendor-BMD19QWe.css">
-    <link rel="stylesheet" crossorigin href="/triple-tap-3d/assets/styles-BRmXDYOT.css">
+    <link rel="stylesheet" crossorigin href="/triple-tap-3d/assets/styles-CUnIjErj.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-   
+    <header class="header" id="site-header">
+  <div class="header-container container">
+    <button type="button" class="menu-button" aria-label="menu toggle">
+      <span class="icon">
+        <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 9L12 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M32 15L5 15" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M32 21L12 21" stroke="white" stroke-linecap="round" stroke-linejoin="round" />  </svg>
+      </span>
+    </button>
+    <nav class="nav ">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="links" href="index.html#Home">Home</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Features">Features</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Play">How to Play</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Download">Download</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Reviews">Reviews</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+  <ul class="menu-list">
+    <li><a class="menu-list-item" href="index.html#Home">Home</a></li>
+    <li><a class="menu-list-item" href="index.html#Features">Features</a></li>
+        <li><a class="menu-list-item" href="index.html#Play">How to Play</a></li>
+    <li>
+      <a class="menu-list-item" href="index.html#Download">Download</a>
+    </li>
+    <li><a class="menu-list-item" href="index.html#Reviews">Reviews</a></li>
+    <li><a class="menu-list-item" href="index.html#Contact">Contact</a></li>
 
+  </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
       <!-- Home -->
- <section class="home-section">
+ <section class="home-section" id="Home">
     <div class="container hero-container">
         <h1 class="visually-hidden">Triple Tap 3D</h1>
         <div class="hero-text-wrapper">
@@ -68,7 +109,7 @@
     </div>
   </article>
   <!-- Why You’ll Love Crazy Match -->
-   <section class="love-section">
+   <section class="love-section" id="Features">
     <div class="container">
         <h2 class="love-title">Why You’ll Love Crazy Match</h2>
         <ul class="love-list">
@@ -83,7 +124,7 @@
     </div>
    </section>
    <!-- Master the Triple Tap in Minutes -->
-<section class="master-section">
+<section class="master-section" id="Play">
     <div class="container">
         <h2 class="master-title">Master the Triple Tap in Minutes</h2>
         <ul class="master-list">
@@ -122,7 +163,7 @@
     </div>
 </section>
 <!-- Ready to Match Like a Master? -->
-<section class="ready-section">
+<section class="ready-section" id="Download">
     <div class="container ready-container">
         <h2 class="ready-title">Ready to Match Like a Master?</h2>
         <p class="ready-text-one">Join over 500,000 players worldwide and test your puzzle-solving skills in 3D!</p>
@@ -199,7 +240,7 @@
     </div>
 </section>
 <!-- What Players Are Saying -->
-<section class="reviews-section">
+<section class="reviews-section" id="Reviews">
     <div class="container reviews-container">
         <h2 class="reviews-title">What Players Are Saying</h2>
         <div class="reviews-wrapper-container">
@@ -261,7 +302,7 @@
     </div>
 </section>
 <!-- Let’s Stay Connected -->
-<section class="contact-section">
+<section class="contact-section" id="Contact">
     <div class="container contact-container">
         <h2 class="contact-title">Let’s Stay Connected</h2>
         <div class="contact-wrapper">
@@ -279,11 +320,60 @@
     </main>
 
     <footer class="footer">
-  <div class="container">
-    
+  <div class="container footer-container">
+    <div class="footer-wrapper">
+    <ul class="footer-navigation">
+      <li class="footer-link">
+        <a class="footer-underline" target="_blank" href="policy/privacy.pdf">Privacy Policy</a>
+        <p class="footer-span">|</p>
+      </li>
+      <li class="footer-link">
+        <a class="footer-underline" target="_blank" href="policy/terms.pdf">Terms of Use</a>
+        <p class="footer-span">|</p>
+      </li>
+
+      <li class="footer-link">
+        <a class="footer-underline" target="_blank" href="policy/cookies.pdf">Cookies</a>
+      </li>
+    </ul>
+    <ul class="footer-menu-list">
+      <li><a class="footer-menu-list-item" href="index.html#Home">Home</a></li>
+      <li><a class="footer-menu-list-item" href="index.html#Features">Features</a></li>
+      <li>
+        <a class="footer-menu-list-item" href="index.html#Download">Download</a>
+      </li>
+      <li><a class="footer-menu-list-item" href="index.html#Reviews">Reviews</a></li>
+      <li><a class="footer-menu-list-item" href="index.html#Contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="last-footer-wrapper">
+    <p class="footer-text">1.2.0 | Updated: April 9, 2025 | Requires Android 7.0+</p>
+    <p class="footer-text">© 2025 Dynasty Speedy Blitz. All Rights Reserved.</p>
+    <div class="icons-wrapper">
+      <a class="footer-icon" href="https://www.facebook.com/">
+        <svg class="footer-svg" width="24" height="24">
+        <use href="/triple-tap-3d/assets/sprite-CR8xVd31.svg#icon-facebook"></use>
+      </svg>
+    </a>
+    <a class="footer-icon" href="https://x.com/">
+      <svg class="footer-svg" width="24" height="24">
+        <use href="/triple-tap-3d/assets/sprite-CR8xVd31.svg#icon-twitter"></use>
+      </svg>
+    </a>
+    <a class="footer-icon" href="https://www.instagram.com/">
+      <svg class="footer-svg" width="24" height="24">
+        <use href="/triple-tap-3d/assets/sprite-CR8xVd31.svg#icon-instagram"></use>
+      </svg>
+    </a>
+    <a class="footer-icon" href="mailto:info@dynastyspeedyblitz.com">
+      <svg class="footer-svg" width="24" height="24">
+        <use href="/triple-tap-3d/assets/sprite-CR8xVd31.svg#icon-email"></use>
+      </svg>
+    </a>
+</div>
+    </div>
   </div>
 </footer>
-
 
   </body>
 </html>
