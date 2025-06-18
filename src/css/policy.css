@@ -1,0 +1,91 @@
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+
+
+.background-policy {
+    font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        color: #fff;
+    text-align: left;
+}
+
+.privacy-title {
+    font-family: "Fredoka", sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        text-align: center;
+        color: #fff;
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+.text-span {
+    font-weight: 500;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.policy-subtitle {
+    font-family: "Fredoka", sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+    margin-top: 32px;
+        margin-bottom: 64px;
+
+}
+
+.policy-list {
+    list-style-type: disc;
+    padding-left: 16px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.text {
+    margin-bottom: 16px;
+}
+
+.mail-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+@media only screen and (min-width: 1439px) {
+    .background-policy {
+        font-size: 20px;
+    }
+
+      .privacy-title {
+        font-size:96px;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+
+    .policy-subtitle {
+        font-size: 48px;
+    }
+}
+@media print {
+
+    html,
+    body {
+        max-width: 1440px;
+        overflow: visible;
+    }
+
+    .container {
+        max-width: none;
+        width: 90%;
+    } 
+  }
